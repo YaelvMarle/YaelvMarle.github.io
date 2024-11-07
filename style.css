@@ -1,34 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
 
-/*HEADER EN NAVIGATIE ------------------------------------------------------*/
-
-body {
-    width: 100%;
-    height: 100%;
+/* Body en header settings */
+body, header {
     margin: 0;
-    background-color: #EBEBEB;
+    max-width: 375px;
+    margin: 0 auto;
 }
 
+/* Algemene opmaak main */
+main {
+    margin-top: 3.5rem;
+}
+
+/* HEADER NAVIGATIE - HOME */
 header {
-    background-color: white;
+    background-color: #9e4226;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row wrap;
     width: 100%;
-    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-header img {
-    width: 8rem;
-    margin: 1rem 0 1rem 2rem;
+header a {
+    color: #FFFBF1;
+    font-family: "Cagliostro", sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 480;
 }
 
 header ul {
@@ -36,387 +37,283 @@ header ul {
     padding: 0;
     margin: 1rem;
     display: flex;
-    flex-flow: row wrap;
     gap: 1rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 1rem;
-    border-radius: 5rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
+header img {
+    width: 20%;
+    margin: 0.7rem;
 }
 
-nav a:hover {
-    color: #E73D28;
+/* Home Sectie met Logo en Titel */
+.home {
+    background-color: #BFD1C4;
+    text-align: center;
+    padding: 5rem 1rem;
+    height: 20.3rem;
 }
 
-.menu1, .menu2, .menu3 {
-    color: #E73D28;
+.home img.logo {
+    max-width: 250px;
+    margin-bottom: 0.2rem;
 }
 
-.subscribe {
-    border: 3px solid #EBEBEB;
-    background: #EBEBEB;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: #232249;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+.home h1 {
+    font-size: 1.1rem;
+    color: #0B3029;
+    font-family: "Cagliostro", sans-serif;
     font-weight: 600;
-    margin: 0 1.4rem 0 3rem;
+    margin-bottom: 1.5rem;
 }
 
-/*MAIN - HOME ------------------------------------------------------*/
-
-main {
-    padding: 9vw;
-    min-height: 100vh;
+.illustratie-wrapper {
+    max-width: 340px;
+    margin-top: 3.1rem;
 }
 
+/* Intro */
 .intro {
-    max-width:40rem;
-    margin-top: -2rem;
-    background: none;
-    
-}
-
-.homepagina {
-    display: flex;
-    margin: 5rem;
-    justify-content: space-between;
-}
-
-.slogan {
-    font-family: "Anton", sans-serif;
-    font-size: 4rem;
-    color: #232249;
-    margin-left: -5rem;
-    margin-right: 5rem;
-    line-height: 5rem;
-    width: 30rem;
-
-}
-
-.slogan img {
-    width: 20rem;
-    height: 30px;
+    background: #FFFBF1;
+    padding: 2rem;
+    text-align: left;
     margin: 0;
+    margin-bottom: -1rem;
 }
 
-.punchline {
-    color: #d44a37;
+.intro h1 {
+    font-size: 3rem;
+    color:  #0B3029;
+    font-weight: 450;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: "Cagliostro", sans-serif;
 }
 
 .intro p {
-    margin-left: -5rem;
-    margin-right: 5rem;
-    margin-top: -1rem;
-    font-size: 0.9rem;
-    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    color: #0B3029;
     font-weight: 600;
-    
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-family: "Short Stack", cursive;
+}
+
+/* Home Button */
+.home_button {
+    display: inline-block;
+    background-color: #a25037;
+    color: white;
+    padding: 0.4rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Cagliostro", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+    width: 8rem;
+    transition: background-color 0.3s;
+}
+
+.home_button:hover {
+    background-color: #0B3029;
+}
+
+/* OVER PAGINA */
+
+/* Gemeenschap */
+.window {
+    background: #FFFBF1; /* Beige achtergrond */
+    text-align: left;
+    height: 49rem;
+}
+
+.window h1 {
+    font-size: 2rem;
+    color: #0B3029;
+    font-weight: 500;
+    margin-top: 0.1rem;
+    margin-bottom: -1.9rem;
+    font-family: "Cagliostro", sans-serif;
+    padding: 2rem;
+}
+
+.window p {
+    font-size: 0.76rem;
+    color: #0B3029;
+    font-weight: 900;
+    line-height: 1.2rem;
+    font-family: "Short Stack", cursive;
+    padding: 0rem 2rem;
+}
+
+/* Duurzaam */
+.sustainable {
+    background: #0B3029;
+    text-align: left;
+    height: 61rem;
+}
+
+.sustainable img {
+    width: 100%;
+    margin: 0.7rem 0;
+}
+
+.sustainable h1 {
+    font-size: 2rem;
+    color: #C2D3C2;
+    font-family: "Cagliostro", sans-serif;
+    font-weight: 500;
+    padding: 2rem;
+    margin-bottom: -1.9rem;
+    margin-top: 0.1rem;
+}
+
+.sustainable p {
+    font-size: 0.76rem;
+    color: #C2D3C2;
+    font-family: "Short Stack", cursive;
+    line-height: 1.2rem;
+    padding: 0rem 2rem;
+}
+
+/* Meedoen */
+.build {
+    background: #FFFBF1;
+    text-align: left;
+}
+
+.build img {
+    width: 110%;
+    margin-left: -2.3rem;
+}
+
+.build h1 {
+    font-size: 2rem;
+    color: #233647;
+    font-weight: 500;
+    margin-top: 0;
+    font-family: "Cagliostro", sans-serif;
+    text-align: left;
+    padding: 2rem;
+    margin-bottom: -1.5rem;
+}
+
+.build p {
+    font-size: 0.76rem;
+    color: #233647;
+    font-weight: 900;
+    line-height: 1.5;
+    font-family: "Short Stack", cursive;
+    padding: 0rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Button stijl */
+.location {
+    display: inline-block;
+    background-color: #a25037;
+    color: white;
+    padding: 0.4rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Cagliostro", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    width: 8rem;
+    transition: background-color 0.3s;
+    margin-left: 2rem;
+}
+
+.location:hover {
+    background-color: #0B3029;
+}
+
+/* LOCATIES PAGINA */
+
+/* Introductie sectie */
+.locaties {
+    background: #FFFBF1;
+    padding: 1.5rem;
+    margin-top: -1rem;
+}
+
+.locaties h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-family: "Cagliostro", sans-serif;
+}
+
+.locaties p {
+    font-size: 0.75rem;
+    color: #233647;
+    font-family: "Short Stack", cursive;
+}
+
+/* Ruilbibliotheek rij styling */
+.library-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #C5D8CA;
+}
+
+/* Ruilbibliotheek styling */
+.library {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.library img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.library h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.3rem 0;
+    font-family: "Cagliostro", sans-serif;
 }
 
 /* Button styling */
-
-.button {
-    display: inline-block;
-    width: 11rem;
-    padding: 10px 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: white;
-    background: #232249;
+.library a {
+    background-color: #0B3029;
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: "Cagliostro", sans-serif;
     text-align: center;
     text-decoration: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-    font-size: 0.8rem;
-    margin-left: -5rem;
-    margin-right: 5rem;
-    margin-top: 0rem;
-}
-
-.button img {
-    margin-left: 10px;
-    width: 70px;
-    height: 24px;
-    vertical-align: middle;
-}
-
-.button:hover {
-    background: rgb(16, 16, 16);
-    color: white;
-}
-
-/* Afbeeldingen */
-.afbeelding2 {
-    width: 42vw;
-    height: 32vw;
-    margin: -1rem 0 0 1.2rem;
-    background-color: none;
-
-}
-
-/* Reviews sectie */
-.reviews {
-    text-align: center;
-    margin: 4rem 0;
-}
-
-.reviews h2 {
-    font-family: "Anton", sans-serif;
-    font-size: 3rem;
-    color: #d44a37;
-    margin-top: 9rem;
-}
-
-.reviews p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 4.5rem;
-    font-family: "Montserrat", sans-serif;
-}
-
-.review-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.review-intro p{
-
-    font-weight: 600;
-    margin-top: -2rem;
-    margin-bottom: 4.5rem;
-    font-family: "Montserrat", sans-serif;
-   
-}
-
-.quote {
-    flex: 1 1 20%;
-    text-align: center;
-    margin: 0 1rem;
-}
-
-.quote img {
-    width: 90px;
-}
-
-.quote p {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #232249;
-    padding: 1rem;
-}
-
-/*MAIN - AFLEVERINGEN ------------------------------------------------------*/
-
-.main-episode {
-    display: flex;
-    align-items: flex-start;
-    margin: 5rem 0 30px;
-}
-
-.main-episode video {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
-}
-
-.episode-info {
-    max-width: 35%;
-}
-
-.main-episode-title {
-    font-size: 2rem;
-    margin: 7px 0 40px 2rem;
-    font-family: "Anton", sans-serif;
-    color: #232249;
-    line-height: 2.5rem;
-}
-
-.episode-info p {
-    font-size: 0.9rem;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    margin: 1rem 0 0 2rem;
-}
-
-.episode-header {
-    font-size: 2rem;
-    margin: 4rem 0 20px;
-    font-family: "Anton", sans-serif;
-}
-
-.small-episodes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.episode-container {
-    width: 30%;
-    margin-bottom: 40px;
-}
-
-.image-wrapper {
-    position: relative;
-}
-
-.episode-image {
-    width: 100%;
-    border-radius: 0;
-    transition: transform 0.3s ease;
-}
-
-
-.play-button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-/* Bronvermelding vormgeving play-button: https://i.pinimg.com/originals/ca/5c/f0/ca5cf09e225fafc0af8e9514cd627651.jpg */
-.play-button img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-
-.play-button img:hover {
-    transform: scale(1.2);
-}
-
-.text-content {
-    margin-top: 15px;
-}
-
-.episode-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    font-family: "Montserrat", sans-serif;
-}
-
-.episode-subtitle {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: grey;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-}
-
-/*MAIN - OVER ONS ------------------------------------------------------*/
-
-.intro-section {
-    text-align: center;
-    margin-bottom: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.intro-title {
-    font-family: "Anton", sans-serif;
-    font-size: 2.5rem;
-    margin: 2rem 0 1rem;
-    color: #232249;
-}
-
-.intro-text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 3rem;
-    line-height: 1.5;
-    font-weight: 600;
-}
-
-.host-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.host {
-    text-align: center;
-    max-width: 200px;
-    margin-bottom: -2rem;
-}
-
-.host img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.host-name {
-    font-family: "Anton", sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: -1rem;
-    color: #232249;
-}
-
-.host-title {
-    font-family: "Anton", sans-serif;
-    font-size: 1.2rem;
-    color: #d44a37;
-    margin-bottom: 1rem;
-}
-
-.host-bio {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #232249;
-    margin: 0.2rem 0 4rem;
-}
-
-.host-center {
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-/*FOOTER ------------------------------------------------------*/
-
-footer {
-    margin-top: -6rem;
-    background-color: #232249;
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
+    gap: 0.3rem;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+}
+
+.library a img {
+    width: 12px;
+    height: 12px;
+}
+
+.library a:hover {
+    background-color: #a25037;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
     padding: 1rem;
-}
-
-footer a {
+    background-color: #0B3029;
     color: white;
-}
-
-.footer-tekst {
-    color: white;
-    line-height: 2rem;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.sociallink {
-    width: 3rem;
-    transition: 0.3s ease;
-}
-
-.sociallink:hover {
-    opacity: 0.3;
+    font-size: 0.9rem;
+    font-family: "Cagliostro", sans-serif;
 }
